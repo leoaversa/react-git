@@ -3,13 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicExample() {
+function NavbarReact() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
       <Navbar.Brand href="#home">
             <img
-              alt=""
+              alt="logo"
               src="logo192.png"
               width="30"
               height="30"
@@ -40,4 +40,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default NavbarReact;

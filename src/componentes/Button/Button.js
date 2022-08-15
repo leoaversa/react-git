@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
 
-function TypesExample() {
+function ButtonBoostrap() {
   return (
     <>
-      <Button variant="primary">Boostrap</Button>{' '}
+      <Button variant="primary">Bootstrap</Button>{' '}
       
     </>
   );
 }
 
-export default TypesExample;
+export default ButtonBoostrap;

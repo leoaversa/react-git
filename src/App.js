@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Alert from './componentes/Alert/Alert';
-import TypesExample from './componentes/Button/Button';
-import BasicExample from './componentes/Navbar/Navbar';
+import ButtonBoostrap from './componentes/Button/Button';
+import NavbarReact from './componentes/Navbar/Navbar';
 
 
 
@@ -13,14 +13,14 @@ function App() {
   return (
     
     <div className="App">
-      <BasicExample/>
+      <NavbarReact/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         
         <p>Curso de React en Coderhouse</p>
         
         <Alert/>
-        <TypesExample>Primary</TypesExample>
+        <ButtonBoostrap>Primary</ButtonBoostrap>
         {/* <a
           className="App-link"
           href="https://reactjs.org"
