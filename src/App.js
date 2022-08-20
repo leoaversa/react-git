@@ -3,8 +3,8 @@ import './App.css';
 import Alert from './componentes/Alert/Alert';
 import ButtonBoostrap from './componentes/Button/Button';
 import NavbarReact from './componentes/Navbar/Navbar';
-import H1 from './componentes/H1/H1';
-import Items from './componentes/ItemListContainer';
+import Titulo from './componentes/Titulo/Titulo';
+import Items from './componentes/ItemListContainer/ItemListContainer';
 
 
 
@@ -23,13 +23,15 @@ function App() {
         
         <p>Curso de React en Coderhouse</p>
 
-        <Items marca= "Gibson"/>
-        <Items marca= "Washburn"/>
+        <Titulo persona= "Leo"/>
+        <Titulo persona= "Fender"/>
 
-
-        <H1 persona= "Leo"/>
-        <H1 persona= "Fender"/>
-        
+        <Items greeting= "Gibson"/>
+        <Items greeting= "Washburn"/>
+        <Items greeting= "Ibanez"/>
+        <Items greeting= "Yamaha"/>
+        <Items greeting= "Jackson"/>
+       
         
         <Alert/>
         
