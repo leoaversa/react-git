@@ -11,24 +11,24 @@ function NavbarReact() {
       <Navbar.Brand href="#home">
             <img
               alt="logo"
-              src="logo192.png"
-              width="30"
-              height="30"
+              src="logofender.png"
+              width="100"
+              height=""
               className="d-inline-block align-top"
             />{' '}
-            React
+            
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Nosotros</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Yerba Clásica</NavDropdown.Item>
+            <NavDropdown title="Guitarras" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Eléctricas</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Roja
+                Acústicas
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Blanca</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Nylon</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Contacto

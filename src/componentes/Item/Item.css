@@ -1,0 +1,20 @@
+.guitar{
+    
+    padding: 30px;
+    
+    
+    
+}
+
+.guitar img{
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}

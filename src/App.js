@@ -2,7 +2,8 @@ import './App.css';
 import NavbarReact from './componentes/Navbar/Navbar';
 import Titulo from './componentes/Titulo/Titulo';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import Producto from './componentes/Cards/Cards';
+
+/* import Producto from './componentes/Cards/Cards'; */
 
 
 
@@ -21,20 +22,17 @@ function App() {
         <Titulo persona= "Guitarras"/>
         
 
-        <ItemListContainer greeting= "Gibson"/>
-        <ItemListContainer greeting= "Washburn"/>
-        <ItemListContainer greeting= "Ibanez"/>
-        <ItemListContainer greeting= "Yamaha"/>
-        <ItemListContainer greeting= "Jackson"/>
+        <ItemListContainer/>
+       
        
         
         
-        <div className='container col-1'>
+        {/* <div className='container col-1'>
         <Producto/>
         <Producto/>
         <Producto/>
         
-        </div>
+        </div> */}
         
         
         

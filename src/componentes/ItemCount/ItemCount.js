@@ -5,7 +5,7 @@ import {useEffect ,useState} from 'react';
 function ItemCount ({initial, stock, onAdd}) {
     const[contador, setContador] = useState(parseInt(initial));
 
-    const incrementar = () =>{
+    const incrementar = () => {
         
         setContador (contador + 1)
     
