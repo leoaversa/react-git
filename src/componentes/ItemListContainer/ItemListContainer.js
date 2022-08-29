@@ -1,15 +1,19 @@
-import Contador from '../Contador/Contador';
+import ItemCount from '../ItemCount/ItemCount';
 import './ItemListContainer.css';
 
 
-function Items(props) {
+function ItemListContainer(props) {
+
+    const onAdd = (quantity) => {
+        console.log (`compraste ${quantity} unidades`);
+    }
     
     return(
         <>
         <h1>Guitarra {props.greeting}</h1>
-        <Contador></Contador>
+        <ItemCount initial={1} stock= {5} onAdd = {onAdd} />
         </>
     );
 }
 
-export default Items;
+export default ItemListContainer;
