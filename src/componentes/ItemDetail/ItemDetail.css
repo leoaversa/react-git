@@ -1,0 +1,23 @@
+.tele-container{
+    background-image: url("https://i.pinimg.com/originals/d3/3b/ea/d33bea67e77049017d6ee7d4f0b71c74.jpg");
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    
+}
+
+.content h1{
+    color: rgb(142, 121, 15);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 20px;
+
+}
+
+.tele-image{
+    object-fit: cover;
+    max-height: 450px;  
+    margin-top: 0px;
+}

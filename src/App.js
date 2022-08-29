@@ -2,6 +2,7 @@ import './App.css';
 import NavbarReact from './componentes/Navbar/Navbar';
 import Titulo from './componentes/Titulo/Titulo';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 
 /* import Producto from './componentes/Cards/Cards'; */
 
@@ -16,24 +17,18 @@ function App() {
     
     <div className="App">
       <NavbarReact/>
+      <ItemDetailContainer/>     
+     
       
       <header className="App-header">
         
-        <Titulo persona= "Guitarras"/>
-        
+        <Titulo persona= "Guitarras"/>       
 
-        <ItemListContainer/>
-       
-       
+        <ItemListContainer/>    
         
         
-        {/* <div className='container col-1'>
-        <Producto/>
-        <Producto/>
-        <Producto/>
         
-        </div> */}
-        
+               
         
         
       </header>
