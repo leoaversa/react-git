@@ -4,21 +4,23 @@ import {useEffect ,useState} from 'react';
 
 const telecaster = {
     id: 1,
-    image: "",  
-    title: "Telecaster"};
+    image: "https://wallpapercave.com/wp/wp3006746.jpg",  
+    title: "Stratocaster",
+    description: "Guitarra Vintage en Oferta",
+    price: "$59.000"};
 
 
 export const ItemDetailContainer = () => {
     const [data, setData] = useState ({});
 
     useEffect(() =>{
-        const getData = new Promise(resolve => {
+        const getItem = new Promise(resolve => {
             setTimeout(() => {
                 resolve (telecaster);
                 
-            }, 3000);
+            }, 2000);
         });
-        getData.then(res => setData(res));
+        getItem.then(res => setData(res));
     }, [])
 
 

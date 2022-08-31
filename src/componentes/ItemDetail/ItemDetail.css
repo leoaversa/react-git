@@ -1,23 +1,29 @@
 .tele-container{
-    background-image: url("https://i.pinimg.com/originals/d3/3b/ea/d33bea67e77049017d6ee7d4f0b71c74.jpg");
     background-color: black;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 470px;
     
 }
 
 .content h1{
-    color: rgb(142, 121, 15);
-    font-size: 12px;
+    color: rgb(219, 184, 9);
+    font-size: 25px;
     font-weight: bold;
-    padding: 20px;
+    padding: 0px;
+    text-align: center;
 
 }
 
 .tele-image{
-    object-fit: cover;
-    max-height: 450px;  
+    object-fit: contain;
+    max-height: 350px;  
     margin-top: 0px;
+}
+
+.price-guitar h3{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
 }

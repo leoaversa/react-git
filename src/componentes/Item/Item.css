@@ -1,8 +1,10 @@
 .guitar{
-    
-    padding: 30px;
-    
-    
+    text-align: center;
+    padding: 20px;   
+    width: 250px; 
+    height: 600px;
+    margin-left: 20px;
+    text-decoration: none;
     
 }
 
@@ -10,11 +12,15 @@
     width: 150px;
     object-fit: cover;
     margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 .card p{
     color: black;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    
     
 }

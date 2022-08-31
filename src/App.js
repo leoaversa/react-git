@@ -4,11 +4,6 @@ import Titulo from './componentes/Titulo/Titulo';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 
-/* import Producto from './componentes/Cards/Cards'; */
-
-
-
-
 
 
 
@@ -17,20 +12,17 @@ function App() {
     
     <div className="App">
       <NavbarReact/>
-      <ItemDetailContainer/>     
-     
-      
-      <header className="App-header">
-        
-        <Titulo persona= "Guitarras"/>       
 
-        <ItemListContainer/>    
+      <ItemDetailContainer/>  
+
+     <Titulo persona= "Guitarras"/>   
+      
+      <header className="App-header">        
+            
+
+        <ItemListContainer/>       
         
-        
-        
-               
-        
-        
+                
       </header>
     </div>
   );
