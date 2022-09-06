@@ -2,17 +2,18 @@
     text-align: center;
     padding: 20px;   
     width: 250px; 
-    height: 600px;
+    height: 650px;
     margin-left: 20px;
     text-decoration: none;
     
 }
 
 .guitar img{
-    width: 150px;
+    width: 140px;
     object-fit: cover;
     margin-bottom: 20px;
     text-align: center;
+   
     
 }
 
@@ -23,4 +24,8 @@
     text-align: center;
     
     
+}
+
+.guitar p{
+    color: black;
 }

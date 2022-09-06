@@ -1,14 +1,14 @@
 .tele-container{
-    background-color: black;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 470px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 800px;
+
     
 }
 
 .content h1{
-    color: rgb(219, 184, 9);
+    color: rgb(0, 0, 0);
     font-size: 25px;
     font-weight: bold;
     padding: 0px;
@@ -17,13 +17,17 @@
 }
 
 .tele-image{
-    object-fit: contain;
-    max-height: 350px;  
-    margin-top: 0px;
+    
+    max-height: 600px;  
+    transform: rotate(90deg);
+
+    
 }
 
 .price-guitar h3{
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(19, 19, 19);
     font-weight: normal;
+
 }
+
