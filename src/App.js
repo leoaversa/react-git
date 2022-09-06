@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavbarReact />
-        <Titulo persona="Guitarras" />
+        <Titulo persona="Guitarras"/>
         
         <header className="App-header">
 

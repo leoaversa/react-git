@@ -10,14 +10,14 @@ export const ItemDetail = ({data}) => {
         setGoToCart(true);
     }
     return(
-    <div className='tele-container'>
+    <div className= "tele-container">
     <div className='tele-detail'>
         <img className='tele-image' src={data.image} alt="guitarra"/>
         <div className='content'>
             <h1>{data.title}</h1>
             {
             gotocart
-            ?<Link to= 'cart'>Terminar compra</Link>
+            ? <Link to= '/cart'>Terminar compra</Link>
             : <ItemCount initial={1} stock= {5} onAdd = {onAdd} />}
     </div>
         <div className='price-guitar'>

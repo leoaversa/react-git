@@ -10,13 +10,13 @@ function NavbarReact() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
             <img
               alt="logo"
-              src="logofender.png"
+              src="../logofender.png"
               width="100"
               height=""
-              className="d-inline-block align-top"
+              className="d-inline-block align-top"              
             />{' '}
             
           </Navbar.Brand>
