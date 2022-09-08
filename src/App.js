@@ -5,6 +5,8 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './componentes/Cart/Cart';
+/* import CarouselGuitar from './componentes/Carousel/Carousel'; */
+
 
 
 
@@ -13,9 +15,12 @@ function App() {
   return ( 
     <BrowserRouter>
       <div className="App">
-        <NavbarReact />
-        <Titulo persona="Guitarras"/>
+        <NavbarReact/>
+        {/* <CarouselGuitar/> */}
         
+        
+        {/* <CarouselGuitar/> */}
+        <Titulo persona="Guitarras"/>
         <header className="App-header">
 
         <Routes>
@@ -26,9 +31,6 @@ function App() {
           <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
           
         </Routes>
-
-          {/*  <ItemDetailContainer /> */}             
-          {/* <ItemListContainer /> */}
 
         </header>
       </div>

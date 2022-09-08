@@ -3,6 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import {useEffect ,useState} from 'react';
 import { useParams } from 'react-router-dom';
 
+
 const guitars = [
 
     {id: 1, 
@@ -106,12 +107,9 @@ const ItemListContainer = () => {
     
     return(
         <>
-        {/* <h1>Guitarra {props.greeting}</h1> */}
         
         <ItemList data={data} ClassName="ItemList"/>
-        <div>
         
-        </div>
         </>
     );
 }

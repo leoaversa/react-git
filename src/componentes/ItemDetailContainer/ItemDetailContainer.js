@@ -2,6 +2,7 @@ import './ItemDetailContainer.css'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {useEffect ,useState} from 'react';
 import { useParams } from 'react-router-dom';
+import CarouselGuitar from '../Carousel/Carousel';
 
 const guitarras = [
 
@@ -98,6 +99,7 @@ export const ItemDetailContainer = () => {
 
 
     return(
+        
         <ItemDetail data={data}/>
     );
 }

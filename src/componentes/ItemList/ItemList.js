@@ -2,14 +2,17 @@ import Item from "../Item/Item";
 import './ItemList.css'
 
 
-
 const ItemList = ({data = []}) => {
-    return(
+    return(         
+          
         
         
-        data.map(guitar => <Item key={guitar.id} info={guitar}/>)
-        
+        data.map(guitar => <Item key={guitar.id} info={guitar}/>)      
+       
     );
-}
+};
+ 
 
 export default ItemList;
+
+
