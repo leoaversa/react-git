@@ -16,4 +16,4 @@
 </ul>
 
 <H3>Gif de navegación</h3>
-![image](codergif.gif)
+![image](./public/codergif.gif)
