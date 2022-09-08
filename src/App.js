@@ -5,7 +5,7 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './componentes/Cart/Cart';
-/* import CarouselGuitar from './componentes/Carousel/Carousel'; */
+import CarouselGuitar from './componentes/Carousel/Carousel';
 
 
 
@@ -15,12 +15,10 @@ function App() {
   return ( 
     <BrowserRouter>
       <div className="App">
-        <NavbarReact/>
-        {/* <CarouselGuitar/> */}
-        
-        
-        {/* <CarouselGuitar/> */}
+        <NavbarReact/>        
+        <CarouselGuitar/>
         <Titulo persona="Guitarras"/>
+
         <header className="App-header">
 
         <Routes>
@@ -33,6 +31,7 @@ function App() {
         </Routes>
 
         </header>
+        
       </div>
     </BrowserRouter>
   );

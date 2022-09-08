@@ -3,7 +3,7 @@ import './Carousel.css'
 
 function CarouselGuitar() {
   return (
-    <Carousel>
+    <Carousel className='margin-carousel'>
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
