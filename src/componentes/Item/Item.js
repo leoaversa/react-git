@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button';
 
 
 
-
-
 const Item = ({info}) => {
+  
+
     return (
         
       <Card style={{ width: "18rem" }} className="Card">

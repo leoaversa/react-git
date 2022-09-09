@@ -1,0 +1,14 @@
+.item-cart {
+    padding: 50px;
+    background-color: #ffffff;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    color: rgb(75, 0, 0);
+  }
+
+  .item-cart img {
+    width: 150px;
+  }

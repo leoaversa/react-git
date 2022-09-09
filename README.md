@@ -16,4 +16,4 @@
 </ul>
 
 <H3>Gif de navegación</h3>
-![image](https://github.com/leoaversa/react-git/blob/main/public/codergif.gif?raw=true)
+![image](https://github.com/leoaversa/react-git/blob/main/codergif.gif)

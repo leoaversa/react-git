@@ -1,13 +1,16 @@
 import './ItemDetail.css'
+import { UseCartContext } from '../../CartContext/CartContext';
 import ItemCount from '../ItemCount/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const ItemDetail = ({data}) => {
     const[gotocart, setGoToCart] = useState(false);
+    const {addProduct} = UseCartContext();
 
     const onAdd = (quantity) => {
         setGoToCart(true);
+        addProduct(data, quantity);
     }
     return(
     <div className= "tele-container">
