@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 export const ItemDetail = ({data}) => {
     const[gotocart, setGoToCart] = useState(false);
-    const {addProduct} = UseCartContext();
+    const {addItem} = UseCartContext();
 
     const onAdd = (quantity) => {
         setGoToCart(true);
-        addProduct(data, quantity);
+        addItem(data, quantity);
     }
     return(
     <div className= "tele-container">

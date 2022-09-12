@@ -95,7 +95,7 @@ export const ItemDetailContainer = () => {
             }, 1000);
         });
         getData.then(res => setData(res.find(guitars=> guitars.id === parseInt(detalleId))));
-    }, [])
+    },)
 
 
     return(

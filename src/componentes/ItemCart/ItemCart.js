@@ -1,8 +1,9 @@
+import { Button } from 'react-bootstrap';
 import { UseCartContext } from '../../CartContext/CartContext';
 import './ItemCart.css';
 
 const ItemCart = ({product}) => {
-    const {removeProduct} = UseCartContext();
+    const {removeItem} = UseCartContext();
     return(
         <div className='item-cart'>
             
@@ -12,7 +13,8 @@ const ItemCart = ({product}) => {
             <p>Cantidad: {product.quantity}</p>
             <p>Precio: ${product.precio}</p>
             <p>Subtotal ${product.quantity * product.precio}</p>
-            <button onClick={() => removeProduct(product.id)}>Eliminar</button>
+            <Button onClick={() => removeItem(product.id)} variant="danger">Eliminar</Button>{' '}          
+            
                          
         </div>
         </div>
