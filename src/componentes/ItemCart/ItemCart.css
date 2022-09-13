@@ -7,8 +7,9 @@
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     color: rgb(75, 0, 0);
+    
   }
 
   .item-cart img {
-    width: 150px;
+    width: 104px;
   }

@@ -20,12 +20,9 @@ const addItem = (item, quantity) =>{
     }
 }
 
-/* const addItem = (item, newQuantity) =>{
-    const newCart = cart.filter (item => item.id !== item.id);
-    newCart.push({...item, quantity: newQuantity});
-    setCart(newCart);
-}
-console.log('carrito:' , cart); */
+console.log('carrito:', cart);
+
+
 
 
 const totalPrice = () => {
