@@ -10,12 +10,13 @@ import CartProvider from './CartContext/CartContext';
 
 
 
+
 function App() {
   return ( 
     <BrowserRouter>
       <div className="App">
         
-         <CartProvider>
+        <CartProvider>
         <NavbarReact/>
         <CarouselGuitar/>
         <Titulo persona="Guitarras"/>
@@ -34,6 +35,7 @@ function App() {
         
 
         </header>
+        
         </CartProvider>
           
       </div>

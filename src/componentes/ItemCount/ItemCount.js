@@ -2,6 +2,7 @@ import './ItemCount.css'
 import Button from 'react-bootstrap/Button';
 import {useEffect ,useState} from 'react';
 
+
 function ItemCount ({initial, stock, onAdd}) {
     const[contador, setContador] = useState(parseInt(initial));
 
@@ -30,6 +31,8 @@ function ItemCount ({initial, stock, onAdd}) {
             <div>
             <>
       <Button disabled={stock <= 0} onClick={() => onAdd(contador)} variant="primary">Agregar al carrito</Button>{' '}
+
+      
       
     </>
             </div>

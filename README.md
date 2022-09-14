@@ -12,6 +12,7 @@
 <li>React Dom</li>
 <li>React Bootstrap</li>
 <li>Boostrap</li>
+<li>SweetAlert2</li>
 
 </ul>
 

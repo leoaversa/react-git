@@ -7,77 +7,77 @@ import { useParams } from 'react-router-dom';
 const guitars = [
 
     {id: 1, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0109200800_gtr_frt_001_rr.jpg",
+     image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-6a2fb.appspot.com/o/0109200800_gtr_frt_001_rr.jpg?alt=media&token=42f81879-717d-4237-8b3c-292f626e64d1",
      title:"Stevie Ray Vaughan Stratocaster",
      category: "eléctrica",
-     precio: 320000
+     price: 320000
      
     },
     {id: 2, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0113912718_fen_ins_frt_1_rr.jpg",
      title:"American Professional II HSS",
      category: "eléctrica",
-     precio: 190000
+     price: 190000
     },
     {id: 3, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0972023200_gtr_frt_001_rr.jpg",
      title:"American Acoustasonic® Stratocaster",
      category: "eléctrica",
-     precio: 185000
+     price: 185000
     },
     {id: 4, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10005/0140610772_fen_ins_frt_1_rr.jpg",
      title:"George Harrison Rocky Stratocaster®",
      category: "eléctrica",
-     precio: 225000
+     price: 225000
     },
     {id: 5, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0147312387_fen_ins_frt_1_rr.jpg",
      title:"American Player Plus Stratocaster®",
      category: "eléctrica",
-     precio: 145000
+     price: 145000
     },
     {id: 6, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0115010727_fen_ins_frt_1_rr.jpg",
      title:"American Cory Wong Stratocaster®",
      category: "eléctrica",
-     precio: 185000
+     price: 185000
     },
     {id: 7, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970913299_gtr_frt_001_rr.jpg",
      title:"Redondo Classic Acustic®",
      category: "acustica",
-     precio: 153000
+     price: 153000
     },
     {id: 8, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970320337_fen_ins_frt_1_rr.jpg",
      title:"American PS-220E Parlor®",
      category: "acustica",
-     precio: 194000
+     price: 194000
     },
     {id: 9, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10005/0971113221_gtr_frt_001_rr.jpg",
      title:"American FA-125CE Dreadnought®",
      category: "acustica",
-     precio: 122000
+     price: 122000
     },
     {id: 10, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0970722088_gtr_frt_001_rr.jpg",
      title:"Malibu Player®",
      category: "acustica",
-     precio: 365000
+     price: 365000
     },
     {id: 11, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970310303_fen_ins_frt_1_rr.jpg",
      title:"PD-220E Dreadnought®",
      category: "acustica",
-     precio: 155000
+     price: 155000
     },
     {id: 12, 
      image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0970713506_gtr_frt_001_rr.jpg",
      title:"American Black Acustic®",
      category: "acustica",
-     precio: 285000
+     price: 285000
     },
     
     

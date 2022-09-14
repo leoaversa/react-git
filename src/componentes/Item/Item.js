@@ -14,7 +14,7 @@ const Item = ({info}) => {
         <Link to={`/detalle/${info.id}`} className="guitar">         
           <img src={info.image} alt="" />
           <h2>{info.title}</h2>
-          <p>${info.precio}</p>
+          <p>${info.price}</p>
           <Button variant="primary">Más detalles</Button>
         </Link>
       </Card>
