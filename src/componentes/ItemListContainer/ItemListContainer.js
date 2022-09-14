@@ -1,87 +1,11 @@
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import {useEffect ,useState} from 'react';
+import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 
 
-const guitars = [
 
-    {id: 1, 
-     image: "https://firebasestorage.googleapis.com/v0/b/ecommerce-react-6a2fb.appspot.com/o/0109200800_gtr_frt_001_rr.jpg?alt=media&token=42f81879-717d-4237-8b3c-292f626e64d1",
-     title:"Stevie Ray Vaughan Stratocaster",
-     category: "eléctrica",
-     price: 320000
-     
-    },
-    {id: 2, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0113912718_fen_ins_frt_1_rr.jpg",
-     title:"American Professional II HSS",
-     category: "eléctrica",
-     price: 190000
-    },
-    {id: 3, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0972023200_gtr_frt_001_rr.jpg",
-     title:"American Acoustasonic® Stratocaster",
-     category: "eléctrica",
-     price: 185000
-    },
-    {id: 4, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10005/0140610772_fen_ins_frt_1_rr.jpg",
-     title:"George Harrison Rocky Stratocaster®",
-     category: "eléctrica",
-     price: 225000
-    },
-    {id: 5, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0147312387_fen_ins_frt_1_rr.jpg",
-     title:"American Player Plus Stratocaster®",
-     category: "eléctrica",
-     price: 145000
-    },
-    {id: 6, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0115010727_fen_ins_frt_1_rr.jpg",
-     title:"American Cory Wong Stratocaster®",
-     category: "eléctrica",
-     price: 185000
-    },
-    {id: 7, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970913299_gtr_frt_001_rr.jpg",
-     title:"Redondo Classic Acustic®",
-     category: "acustica",
-     price: 153000
-    },
-    {id: 8, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970320337_fen_ins_frt_1_rr.jpg",
-     title:"American PS-220E Parlor®",
-     category: "acustica",
-     price: 194000
-    },
-    {id: 9, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10005/0971113221_gtr_frt_001_rr.jpg",
-     title:"American FA-125CE Dreadnought®",
-     category: "acustica",
-     price: 122000
-    },
-    {id: 10, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0970722088_gtr_frt_001_rr.jpg",
-     title:"Malibu Player®",
-     category: "acustica",
-     price: 365000
-    },
-    {id: 11, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10001/0970310303_fen_ins_frt_1_rr.jpg",
-     title:"PD-220E Dreadnought®",
-     category: "acustica",
-     price: 155000
-    },
-    {id: 12, 
-     image: "https://www.fmicassets.com/Damroot/GuitarVertDesktopJpg/10002/0970713506_gtr_frt_001_rr.jpg",
-     title:"American Black Acustic®",
-     category: "acustica",
-     price: 285000
-    },
-    
-    
-];
 
 
 const ItemListContainer = () => {
@@ -90,15 +14,21 @@ const ItemListContainer = () => {
     const {categoryId} = useParams();
 
     useEffect(() => {
-        const getData = new Promise(resolve =>{
-            setTimeout(() => {
-                resolve(guitars);
-            }, 1000);
-        });
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'items');
+
         if (categoryId){
-            getData.then(res=> setData(res.filter(guitars => guitars.category === categoryId)));
-        } else{        
-        getData.then(res=> setData(res));
+        const queryFilter = query(queryCollection, where('category','==', categoryId))
+        getDocs(queryFilter)
+        .then(res=> setData(res.docs.map(item => ({id: item.id, ...item.data() }))))
+        } 
+        
+        else{ 
+        
+        getDocs(queryCollection)
+        .then(res=> setData(res.docs.map(item => ({id: item.id, ...item.data() }))))
+                    
+
     }
 
     },[categoryId])

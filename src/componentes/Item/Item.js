@@ -12,7 +12,7 @@ const Item = ({info}) => {
         
       <Card style={{ width: "18rem" }} className="Card">
         <Link to={`/detalle/${info.id}`} className="guitar">         
-          <img src={info.image} alt="" />
+          <img src={info.image} alt="imagen" />
           <h2>{info.title}</h2>
           <p>${info.price}</p>
           <Button variant="primary">Más detalles</Button>

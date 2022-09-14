@@ -26,7 +26,7 @@ function NavbarReact() {
             <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
             <NavDropdown title="Guitarras" id="basic-nav-dropdown">
               <NavDropdown.Item as={NavLink} to='/category/eléctrica'>Eléctricas</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to='/category/acustica'>Acústicas</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to='/category/acústica'>Acústicas</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={NavLink} to="#action/3.4">
                 Contacto
