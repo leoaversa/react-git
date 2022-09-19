@@ -7,19 +7,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './componentes/Cart/Cart';
 import CarouselGuitar from './componentes/Carousel/Carousel';
 import CartProvider from './CartContext/CartContext';
+import Footer from './componentes/Footer/Footer';
+
 
 
 
 
 function App() {
   return ( 
+    
     <BrowserRouter>
       <div className="App">
         
         <CartProvider>
         <NavbarReact/>
         <CarouselGuitar/>
-        <Titulo persona="Guitarras"/>
+        <Titulo persona="Guitars"/>
+        
 
         <header className="App-header">
           
@@ -35,8 +39,10 @@ function App() {
         
 
         </header>
+        <Footer/>
         
         </CartProvider>
+        
           
       </div>
            

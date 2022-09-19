@@ -31,3 +31,13 @@
 
 }
 
+.button-terminar{
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(17, 87, 226);
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    }
+       
+

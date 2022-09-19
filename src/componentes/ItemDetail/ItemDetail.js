@@ -20,7 +20,11 @@ export const ItemDetail = ({data}) => {
             <h1>{data.title}</h1>
             {
             gotocart
-            ? <Link to= '/cart'>Terminar compra</Link>
+            ? <Link to= '/cart'className='button-terminar'>
+                
+                Terminar compra
+                
+                </Link>
             : <ItemCount initial={1} stock= {5} onAdd = {onAdd} />}
     </div>
         <div className='price-guitar'>

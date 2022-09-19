@@ -1,0 +1,33 @@
+.footer-flex{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    height: 380px;
+   
+    
+}
+.footer-flex ul{
+    padding: 50px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(174, 174, 174);
+    list-style: none;
+    line-height: 35px;
+    
+}
+
+.footer-flex ul h6{
+    color: white;
+}
+.icons{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    margin-top: 20px;    
+
+}
+
+.logo-fender {
+    margin-top: 90px;
+}
