@@ -1,6 +1,7 @@
 .total-price{
     font-weight: bold;
-    margin-top: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     font-size: 20px;
 }
 
@@ -9,11 +10,10 @@
     font-weight: bold;
 }
 
-/* .realizar-compra{
- font-size: 20px;
- text-decoration: none;
- color: black;
-} */
+.button-terminar{
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
 
 .loguito-cart img{
     width: 30px;

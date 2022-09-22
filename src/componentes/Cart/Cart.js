@@ -5,6 +5,7 @@ import ItemCart from "../ItemCart/ItemCart";
 import './Cart.css'
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 
+
 const Cart = () => {
     const {cart, totalPrice} = UseCartContext();
 
@@ -52,10 +53,14 @@ return(
     }
     <div>
     <p className="total-price">
-        Total: {totalPrice()}
+        Total: $ {totalPrice()}
         </p>
+        
+        <Link to='/form' className="realizar-compra">
 
-        <Button onClick={handleClick} variant="primary">Terminar compra</Button>
+        <Button onClick={handleClick} variant="primary" className="button-terminar">Terminar compra</Button>
+
+        </Link>
         
     </div>
         

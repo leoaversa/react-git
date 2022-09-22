@@ -8,6 +8,7 @@ import Cart from './componentes/Cart/Cart';
 import CarouselGuitar from './componentes/Carousel/Carousel';
 import CartProvider from './CartContext/CartContext';
 import Footer from './componentes/Footer/Footer';
+import FormExample from './componentes/FormValidation/FormValidation';
 
 
 
@@ -25,8 +26,8 @@ function App() {
         <Titulo persona="Guitars"/>
         
 
-        <header className="App-header">
-          
+        
+        <header>
 
         <Routes>
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/category/:categoryId' element={<ItemListContainer/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
+          <Route path='/form' element={<FormExample/>} />
           
         </Routes>
         

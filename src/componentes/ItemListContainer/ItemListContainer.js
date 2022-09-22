@@ -35,12 +35,16 @@ const ItemListContainer = () => {
 
     
     
-    return(
-        <>
-        
-        <ItemList data={data} ClassName="ItemList"/>
-        
-        </>
+    return (
+      <>
+        <div className="container">
+          <div className="col-12 ">
+            <div className="row ItemList">
+              <ItemList data={data} />
+            </div>
+          </div>
+        </div>
+      </>
     );
 }
 

@@ -1,18 +1,19 @@
 .guitar{
     text-align: center;
-    padding: 20px;   
+    padding: 30px;   
     width: 250px; 
     height: 650px;
-    margin-left: 20px;
+    margin-left: 0px;
     text-decoration: none;
     
 }
 
 .guitar img{
-    width: 140px;
+    
     object-fit: cover;
     margin-bottom: 20px;
     text-align: center;
+    height: 400px;
    
     
 }

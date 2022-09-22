@@ -7,7 +7,7 @@ function Producto() {
     <Card style={{ width: '18rem' }} className="card container">
       <Card.Img variant="top" src="./fender1.jpg" />
       <Card.Body>
-        <Card.Title>Custom 57'</Card.Title>
+        <Card.Title>titulo</Card.Title>
         <Card.Text>
           Relic modelo SRV
         </Card.Text>

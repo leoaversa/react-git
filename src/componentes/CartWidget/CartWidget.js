@@ -1,4 +1,4 @@
-
+import './CartWidget.css'
 import { UseCartContext } from "../../CartContext/CartContext";
 
 
@@ -8,7 +8,8 @@ export const CartWidget = () => {
     return(
         <>
         <i className="bi bi-cart3"></i>
-        <span>{totalProducts() || ''}</span>
+        <span className='cart-number'>{totalProducts() || ''}</span>
+        
         </>
     );
 }
