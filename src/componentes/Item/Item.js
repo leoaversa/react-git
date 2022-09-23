@@ -15,7 +15,7 @@ const Item = ({info}) => {
           <img src={info.image} alt="imagen" />
           <h2>{info.title}</h2>
           <p>${info.price}</p>
-          <Button variant="primary">Más detalles</Button>
+          <Button variant="dark" className='button-detalles'>Más detalles</Button>
         </Link>
       </Card>
       

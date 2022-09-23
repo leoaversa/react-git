@@ -90,7 +90,7 @@ function FormExample() {
         <Form.Check
           required
           label="Acepto los términos y condiciones"
-          feedback="Tienes que aceptar los términos para realizar tu compra"
+          feedback="Debes aceptar los términos para realizar tu compra"
           feedbackType="invalido"
         />
       </Form.Group>

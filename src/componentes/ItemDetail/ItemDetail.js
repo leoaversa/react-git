@@ -14,22 +14,24 @@ export const ItemDetail = ({data}) => {
         addItem(data, quantity);
     }
     return (
-      <div className="tele-container">
-        <div className="tele-detail">
+      <div className="tele-detail"><div/>
+        <div className="tele-container">
+        
           <img className="tele-image" src={data.image} alt="guitarra" />
           <div className="content">
             <h1>{data.title}</h1>
             <div className="price-guitar">
-            <h3>{data.description}</h3>
+            
+            <hr></hr>
             <h3>${data.price}</h3>
           </div>
             {gotocart ? (
               <>
                 <Link to="/cart" className="button-terminar">
-                  <Button variant="primary">Terminar compra</Button>
+                  <Button variant="dark">Terminar compra</Button>
                 </Link>
                 <Link to="/" className="button-seguir">
-                  <Button variant="primary">Seguir comprando</Button>
+                  <Button variant="dark">Seguir comprando</Button>
                 </Link>
               </>
             ) : (

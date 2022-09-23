@@ -25,12 +25,12 @@ function ItemCount ({initial, stock, onAdd}) {
 
     return(
         <div className="contador">
-            <Button disabled={contador <= 1} onClick={decrementar}variant="primary">-</Button>{' '}
+            <Button disabled={contador <= 1} onClick={decrementar}variant="dark">-</Button>{' '}
             <span>{contador}</span>
-            <Button disabled={contador >= stock} onClick={incrementar} variant="primary">+</Button>{' '}            
+            <Button disabled={contador >= stock} onClick={incrementar} variant="dark">+</Button>{' '}            
             <div>
             <>
-      <Button disabled={stock <= 0} onClick={() => onAdd(contador)} variant="primary">Agregar al carrito</Button>{' '}
+      <Button disabled={stock <= 0} onClick={() => onAdd(contador)} variant="dark">Agregar al carrito</Button>{' '}
 
       
       
