@@ -6,16 +6,17 @@
     margin-left: 0px;
     text-decoration: none;
     
+    
 }
 
-.guitar img{
-    
-    object-fit: cover;
+.guitar img {
+
     margin-bottom: 20px;
     text-align: center;
     height: 400px;
-   
     
+
+
 }
 
 .card p{
@@ -23,6 +24,8 @@
     font-size: 15px;
     font-weight: normal;
     text-align: center;
+    box-shadow: rgba(216, 216, 216, 0.2) 0px 8px 24px;
+    
     
     
 }
@@ -31,4 +34,6 @@
     font-size: 15px;
     
 }
+
+
 

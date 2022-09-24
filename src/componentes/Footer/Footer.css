@@ -32,3 +32,8 @@
 .logo-fender {
     margin-top: 90px;
 }
+
+.inner:hover{
+    transform: scale(1.5);
+    transition-duration: 0.1s;
+    }

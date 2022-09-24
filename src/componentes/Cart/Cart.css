@@ -31,14 +31,25 @@
 }
 
 .form-orden{
-    padding: 20px;
+    padding: 30px;
     width: 500px;
     background-color: rgb(237, 237, 237);
+    
 }
 
+
+
 .titulo-orden{
-    margin: 60px 0px -10px;
-    font-size: 20px;
+    color: rgb(42, 25, 25);
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #EDEDED;
+    padding: 8px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: -20px;
+    
+    
 }
 
 .button-compra{
@@ -46,13 +57,14 @@
 }
 
 .background-image{
-    background-image: url(/public/3fenders.jpg);
+    background-image: url(/public/3fenders2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: -48px;
     background-size: 100%;
     background-position-x: 0px ;
-    background-position-y: 130px ;
+    background-position-y: 130px;
+    
     
 }
 

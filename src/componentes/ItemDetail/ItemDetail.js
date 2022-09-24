@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
+
+
 export const ItemDetail = ({data}) => {
     const[gotocart, setGoToCart] = useState(false);
     const {addItem} = UseCartContext();
@@ -18,6 +20,7 @@ export const ItemDetail = ({data}) => {
         <div className="tele-container">
         
           <img className="tele-image" src={data.image} alt="guitarra" />
+          
           <div className="content">
             <h1>{data.title}</h1>
             <div className="price-guitar">

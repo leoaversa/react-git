@@ -65,9 +65,10 @@ return (
     ))}
     <div className="background-image">
       <p className="total-price">Total: $ {totalPrice()}</p>
-      <hr></hr>
+      
+      <div className="div-titulo">
       <h2 className="titulo-orden">COMPLETA TUS DATOS PARA LA COMPRA</h2>
-
+      </div>
       <Form onSubmit={SendOrder} className="container mt-5 mb-5 form-orden">
         <Row className="mb-3">
           <Form.Group md="4" controlId="validationCustom01">

@@ -6,3 +6,7 @@
     margin-left: -4px;
 }
 
+.inner:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    }

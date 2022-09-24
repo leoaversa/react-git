@@ -16,7 +16,7 @@ function NavbarReact() {
               src="../logofender.png"
               width="100"
               height=""
-              className="d-inline-block align-top"              
+              className="d-inline-block align-top inner"              
             />{' '}
             
           </Navbar.Brand>
@@ -36,10 +36,10 @@ function NavbarReact() {
             <Nav.Link as={NavLink} to='/Cart'><CartWidget/></Nav.Link>
              
              <div className='nav-icons'>
-            <Nav.Link href='https://www.youtube.com/fendermusical'><img src='../youtubeicon.png' alt='icon'width="25px"></img></Nav.Link>
-            <Nav.Link href='https://www.instagram.com/fender/'><img src='../instaicon.png' alt='icon'width="25px"></img></Nav.Link>
-            <Nav.Link href='https://www.facebook.com/Fender'><img src='../faceicon.png' alt='icon' width="25px"></img></Nav.Link>
-            <Nav.Link href='https://twitter.com/Fender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'><img src='../twittericon.png' alt='icon'width="25px"></img></Nav.Link>
+            <Nav.Link href='https://www.youtube.com/fendermusical'><img className='inner' src='../youtubeicon.png' alt='icon'width="25px"></img></Nav.Link>
+            <Nav.Link href='https://www.instagram.com/fender/'><img className='inner' src='../instaicon.png' alt='icon'width="25px"></img></Nav.Link>
+            <Nav.Link href='https://www.facebook.com/Fender'><img className='inner' src='../faceicon.png' alt='icon' width="25px"></img></Nav.Link>
+            <Nav.Link href='https://twitter.com/Fender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'><img className='inner' src='../twittericon.png' alt='icon'width="25px"></img></Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>

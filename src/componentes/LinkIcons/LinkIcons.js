@@ -9,7 +9,7 @@ const LinkIcons = () => {
               <img
                 src="../electric.jpg"
                 alt="electrica"
-                className="icon-electric container"
+                className="icon-electric container inner"
               />
               <p className="p-electric">Eléctricas</p>
             </Link>
@@ -18,7 +18,7 @@ const LinkIcons = () => {
           <div>
             <Link to="./category/acústica" className='link-title'>
               <img
-                className="icon-electric container"
+                className="icon-electric container inner"
                 src="../acoustic.jpg"
                 alt="acustica"
               />

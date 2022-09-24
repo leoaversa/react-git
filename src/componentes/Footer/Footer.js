@@ -61,10 +61,10 @@ const Footer = () => {
       <div className='icons'>
         <ul>
           
-        <li><a href='https://www.facebook.com/Fender'><img src='../faceicon.png' alt='icon' width="35px"></img></a></li>
-        <li> <a href='https://www.instagram.com/fender/'> <img src='../instaicon.png' alt='icon'width="35px"></img></a></li>
-        <li><a href='https://twitter.com/Fender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'><img src='../twittericon.png' alt='icon'width="35px"></img></a></li>
-        <li><a href='https://www.youtube.com/fendermusical'><img src='../youtubeicon.png' alt='icon'width="35px"></img></a></li>
+        <li><a href='https://www.facebook.com/Fender'><img className='inner' src='../faceicon.png' alt='icon' width="35px"></img></a></li>
+        <li> <a href='https://www.instagram.com/fender/'> <img className='inner' src='../instaicon.png' alt='icon'width="35px"></img></a></li>
+        <li><a href='https://twitter.com/Fender?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'><img className='inner' src='../twittericon.png' alt='icon'width="35px"></img></a></li>
+        <li><a href='https://www.youtube.com/fendermusical'><img className='inner' src='../youtubeicon.png' alt='icon'width="35px"></img></a></li>
       </ul>
       </div>
 

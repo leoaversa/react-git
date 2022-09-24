@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: center;
     margin: 20px 0px -20px 0px;
+    
        
 }
 
 .icon-electric{
     width: 90px;
+    
     
 }
 
@@ -17,8 +19,16 @@
     font-weight: 500;
     color: black;
     
+    
 }
 
 .link-title{
     text-decoration: none;
+    
 }
+
+.inner:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    
+    }

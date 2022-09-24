@@ -12,6 +12,7 @@
     background-position-x: -100px;
     background-size: 500px;
     
+    
 
     
 }
@@ -35,8 +36,14 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    
 
     
+}
+
+.inner:hover{
+transform: scale(1.8);
+transition-duration: 2.0s;
 }
 
 .price-guitar h3{
