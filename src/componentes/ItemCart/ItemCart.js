@@ -6,7 +6,7 @@ import "./ItemCart.css";
 const ItemCart = ({ product }) => {
   const { removeItem } = UseCartContext();
   return (
-    <div className="container">
+    <div className="container backgroung-img">
       <div className="col">
         <div className="row">
           <div className="item-cart mt-5">

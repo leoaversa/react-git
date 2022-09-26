@@ -17,41 +17,33 @@ import LinkIcons from './componentes/LinkIcons/LinkIcons';
 
 
 function App() {
-  return ( 
-    
+  return (
     <BrowserRouter>
       <div className="App">
-        
         <CartProvider>
-        <NavbarReact/>
-        <CarouselGuitar/>
-        
-        <Titulo persona="SHOP"/>
-        <LinkIcons/>
-        
+          <NavbarReact />
+          <CarouselGuitar />
 
-        
-        <header>
+          <Titulo persona="SHOP" />
+          <LinkIcons />
 
-        <Routes>
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route
+              path="/category/:categoryId"
+              element={<ItemListContainer />}
+            />
+            <Route path="/cart" element={<Cart />} />
+            <Route
+              path="/detalle/:detalleId"
+              element={<ItemDetailContainer />}
+            />
+            <Route path="/form" element={<FormExample />} />
+          </Routes>
 
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/category/:categoryId' element={<ItemListContainer/>} />
-          <Route path='/cart' element={<Cart/>} />
-          <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
-          <Route path='/form' element={<FormExample/>} />
-          
-        </Routes>
-        
-
-        </header>
-        <Footer/>
-        
+          <Footer />
         </CartProvider>
-        
-          
       </div>
-           
     </BrowserRouter>
   );
 }

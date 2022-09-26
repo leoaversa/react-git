@@ -11,13 +11,13 @@
     background-repeat: no-repeat;
     background-position-x: -100px;
     background-size: 500px;
-    
-    
 
-    
+
+
+
 }
 
-.content h1{
+.content h1 {
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
@@ -28,47 +28,46 @@
 
 }
 
-.tele-image{
-    
+.tele-image {
+
     max-height: 600px;
     padding: 50px;
     margin-top: -100px;
     display: flex;
     justify-content: center;
-    align-items:center;
-    
+    align-items: center;
 
-    
+
+
 }
 
-.inner:hover{
-transform: scale(1.8);
-transition-duration: 2.0s;
+.inner:hover {
+    transform: scale(1.5);
+    transition-duration: 0.5s;
 }
 
-.price-guitar h3{
+.price-guitar h3 {
     padding: 0px;
     width: 140px;
     text-align: left;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 50px;
-    
-    
+
+
 
 }
 
-.button-seguir{
+.button-seguir {
     margin-left: 30px;
-    
-    
+
+
 }
-.button-terminar{
+
+.button-terminar {
     font-size: 15px;
     margin-left: 0px;
     margin-top: 50px;
-    
-    
-}
-       
 
+
+}

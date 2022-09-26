@@ -1,9 +1,12 @@
-import './Titulo.css'
+import "./Titulo.css";
+import "animate.css";
 function Titulo(props) {
-    console.log(props)
-    return(
-        <h2 className='title-guitars'> {props.persona} BY CATEGORY</h2>
-    )
+  return (
+    <h2 className="title-guitars animate__animated animate__zoomIn">
+      {" "}
+      {props.persona} BY CATEGORY
+    </h2>
+  );
 }
 
 export default Titulo;

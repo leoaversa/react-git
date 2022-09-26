@@ -7,3 +7,7 @@
     transform: scale(1.5);
     transition-duration: 0.0s;
     }
+
+.opacity{
+    opacity: 0.90;
+}

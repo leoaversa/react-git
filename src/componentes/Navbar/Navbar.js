@@ -8,30 +8,27 @@ import './Navbar.css'
 
 function NavbarReact() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className='fixed-top'>
+    <Navbar bg="dark opacity" variant="dark" expand="lg" className='fixed-top '>
       <Container>
       <Navbar.Brand href="/">
             <img
               alt="logo"
               src="../logofender.png"
               width="100"
-              height=""
               className="d-inline-block align-top inner"              
-            />{' '}
+            />
             
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto ">
             <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
             <NavDropdown title="Guitarras" id="basic-nav-dropdown">
               <NavDropdown.Item as={NavLink} to='/category/eléctrica'>Eléctricas</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/category/acústica'>Acústicas</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/'>Todos los Modelos</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={NavLink} to="#action/3.4">
-                Contacto
-              </NavDropdown.Item>
+              
+              
             </NavDropdown>
             <Nav.Link as={NavLink} to='/Cart'><CartWidget/></Nav.Link>
              

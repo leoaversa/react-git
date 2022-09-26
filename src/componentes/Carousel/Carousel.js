@@ -7,7 +7,7 @@ function CarouselGuitar() {
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
-          src="../car1.jpg"
+          src="../car5.jpg"
           alt="first slide"
         />
         <Carousel.Caption className='titulo-carousel'>
@@ -18,7 +18,7 @@ function CarouselGuitar() {
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
-          src="../car2.jpg"
+          src="../car3.jpg"
           alt="Second slide"
         />
         <Carousel.Caption className='titulo-carousel2'>
@@ -29,7 +29,7 @@ function CarouselGuitar() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="../car3.jpg"
+          src="../car4.jpg"
           alt="Third slide"
         />
         <Carousel.Caption className='titulo-carousel3'>

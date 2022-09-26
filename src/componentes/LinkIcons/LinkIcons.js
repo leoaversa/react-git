@@ -1,5 +1,6 @@
 import './LinkIcons.css'
 import { Link } from 'react-router-dom'
+import 'animate.css';
 const LinkIcons = () => {
     return (
       <>
