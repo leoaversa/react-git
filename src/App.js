@@ -24,7 +24,7 @@ function App() {
           <NavbarReact />
           <CarouselGuitar />
 
-          <Titulo persona="SHOP" />
+          <Titulo categoria="SHOP" />
           <LinkIcons />
 
           <Routes>

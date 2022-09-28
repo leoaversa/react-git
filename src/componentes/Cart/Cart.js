@@ -6,11 +6,13 @@ import "./Cart.css";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Form } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import Gracias from "../Alerts/Gracias";
 import Img from "../Img/Img";
+import ButtonForm from "../Button/Button";
+
+
 
 const Cart = () => {
-  const { cart, totalPrice } = UseCartContext();
+  const { cart, totalPrice, clearCart } = UseCartContext();
 
   if (cart.length === 0) {
     return (
@@ -48,12 +50,15 @@ const Cart = () => {
       })),
       
       total: totalPrice(),
+      
     };
 
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
-    addDoc(ordersCollection, order).then(({ id }) => console.log(id));
+    addDoc(ordersCollection, order).then(() => clearCart());
     console.log(order);
+    
+    
   };
 
   return (
@@ -61,20 +66,28 @@ const Cart = () => {
       {cart.map((product) => (
         <ItemCart key={product.id} product={product} />
       ))}
+
       <div className="background-image">
         <p className="total-price">Total: $ {totalPrice()}</p>
+        <Button className="vaciar-carrito" variant="dark" onClick={clearCart}>
+          Vaciar Carrito
+        </Button>
+        
+       {/*  FORMULARIO */}
 
         <div className="div-titulo"></div>
         <Form onSubmit={SendOrder} className="container mt-5 mb-5 form-orden">
           <Row className="mb-3">
             <Form.Label className="titulo-orden">Completa tus datos</Form.Label>
             <Form.Group
+              
               className="titulos-ingresar"
               md="4"
               controlId="validationCustom01"
             >
               <Form.Label>Nombre</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Ingresa tu Nombre"
                 name="name"
@@ -82,9 +95,10 @@ const Cart = () => {
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
 
-            <Form.Group md="4" controlId="validationCustom01">
+            <Form.Group md="4" controlId="validationCustom02">
               <Form.Label>Apellido</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Ingresa tu Apellido"
                 apellido="apellido"
@@ -95,6 +109,7 @@ const Cart = () => {
             <Form.Group md="4" controlId="validationCustom01">
               <Form.Label>Email</Form.Label>
               <Form.Control
+                required
                 type="email"
                 placeholder="Ingresa tu Email"
                 email="email"
@@ -105,6 +120,7 @@ const Cart = () => {
             <Form.Group md="4" controlId="validationCustom01">
               <Form.Label>Dirección</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Dirección"
                 dirección="dirección"
@@ -112,9 +128,10 @@ const Cart = () => {
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
 
-            <Form.Group md="4" controlId="validationCustom01">
+            <Form.Group md="4" controlId="validationCustom05">
               <Form.Label>CP</Form.Label>
               <Form.Control
+                required
                 type="text"
                 placeholder="Ingresa tu Código Postal"
                 CP="CP"
@@ -124,14 +141,9 @@ const Cart = () => {
             <Img />
           </Row>
 
-          <Button
-            onClick={Gracias}
-            type="submit"
-            variant="primary"
-            className="button-compra"
-          >
-            Terminar compra
-          </Button>
+          <ButtonForm/>
+          
+          
         </Form>
       </div>
     </>

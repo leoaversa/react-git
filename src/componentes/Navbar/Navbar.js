@@ -10,7 +10,7 @@ function NavbarReact() {
   return (
     <Navbar bg="dark opacity" variant="dark" expand="lg" className='fixed-top '>
       <Container>
-      <Navbar.Brand href="/">
+      <Navbar.Brand as={NavLink} to='./'>
             <img
               alt="logo"
               src="../logofender.png"
@@ -22,7 +22,7 @@ function NavbarReact() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto ">
-            <Nav.Link as={NavLink} to='/'>Home</Nav.Link>
+            <Nav.Link as={NavLink} to='./'>Home</Nav.Link>
             <NavDropdown title="Guitarras" id="basic-nav-dropdown">
               <NavDropdown.Item as={NavLink} to='/category/eléctrica'>Eléctricas</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to='/category/acústica'>Acústicas</NavDropdown.Item>
