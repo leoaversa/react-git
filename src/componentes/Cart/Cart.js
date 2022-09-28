@@ -11,6 +11,7 @@ import ButtonForm from "../Button/Button";
 
 
 
+
 const Cart = () => {
   const { cart, totalPrice, clearCart } = UseCartContext();
 
@@ -53,6 +54,10 @@ const Cart = () => {
       
     };
 
+    
+
+    
+
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
     addDoc(ordersCollection, order).then(() => clearCart());
@@ -78,7 +83,8 @@ const Cart = () => {
         <div className="div-titulo"></div>
         <Form onSubmit={SendOrder} className="container mt-5 mb-5 form-orden">
           <Row className="mb-3">
-            <Form.Label className="titulo-orden">Completa tus datos</Form.Label>
+            <Form.Label className="titulo-orden">¡Recibe tu compra!</Form.Label>
+            <Form.Label className="subtitulo-orden">Ingresa tu datos</Form.Label>
             <Form.Group
               
               className="titulos-ingresar"

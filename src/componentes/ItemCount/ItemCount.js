@@ -1,6 +1,8 @@
 import "./ItemCount.css";
 import Button from "react-bootstrap/Button";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
+
 
 function ItemCount({ initial, stock, onAdd }) {
   const [contador, setContador] = useState(parseInt(initial));
@@ -30,8 +32,19 @@ function ItemCount({ initial, stock, onAdd }) {
         <>
           <Button
             disabled={stock <= 0}
-            onClick={() => onAdd(contador)}
+
+            onClick={() => {
+                    
+              Swal.fire({
+                position: "top-end",
+                title: "Producto Agregado",
+                showConfirmButton: false,
+                timer: 1000,
+              });
+
+            onAdd(contador)}}
             variant="dark"
+            
           >
             Agregar al carrito
           </Button>{" "}

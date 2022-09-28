@@ -8,6 +8,7 @@ import 'animate.css'
 
 
 
+
 export const ItemDetail = ({ data }) => {
   const [gotocart, setGoToCart] = useState(false);
   const { addItem } = UseCartContext();
@@ -30,7 +31,7 @@ export const ItemDetail = ({ data }) => {
           </div>
           {gotocart ? (
             <>
-              <Link to="/cart" className="button-terminar">
+              <Link to="/cart" className="button-terminar" >
                 <Button variant="dark">Terminar compra</Button>
               </Link>
               <Link to="/" className="button-seguir">
