@@ -21,7 +21,7 @@ function NavbarReact() {
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto ">
+          <Nav className="md-auto">
             <Nav.Link as={NavLink} to='./'>Home</Nav.Link>
             <NavDropdown title="Guitarras" id="basic-nav-dropdown">
               <NavDropdown.Item as={NavLink} to='/category/eléctrica'>Eléctricas</NavDropdown.Item>
