@@ -21,6 +21,26 @@ div button {
     padding: 5px;
 }
 
+@media screen and (max-width: 800px) {
+    .contador {
+        width: 150px;
+        margin: auto;
+        text-align: center;
+        color: black;
+        font-size: 10px;
+    }
+
+    div button {
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: none;
+        margin-top: 15px;
+        padding: 5px;
+        
+    }
+
+}
+
 
 
 

@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <ul>
+        <ul className="mediaq">
           <h6>Productos</h6>
           <li>Guitarras</li>
           <li>Bajos</li>
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <ul>
+        <ul className="mediaq">
           <h6>Productos</h6>
           <li>Guitarras</li>
           <li>Bajos</li>
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <ul>
+        <ul className="mediaq">
           <h6>Productos</h6>
           <li>Guitarras</li>
           <li>Bajos</li>

@@ -27,10 +27,16 @@
     
 }
 
-.inner:hover{
+.inner:hover {
     transform: scale(1.1);
     transition-duration: 0.3s;
-    
-    }
 
+}
+
+@media screen and (max-width: 800px) {
+    .icon-electric {
+        width: 70px;
+
+    }
+}
     

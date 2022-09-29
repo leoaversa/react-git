@@ -11,14 +11,17 @@ h2{
 }
 
 .ItemList{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: grid;
-  gap: 15px;
-  max-width: 100%;
-  padding: 0px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   
-}
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 15px;
+    max-width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+ 
+  
+

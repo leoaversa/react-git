@@ -11,11 +11,8 @@
     background-repeat: no-repeat;
     background-position-x: -100px;
     background-size: 500px;
-
-
-
-
 }
+
 
 .content h1 {
     color: rgb(0, 0, 0);
@@ -71,3 +68,23 @@
 
 
 }
+
+@media screen and (max-width: 1300px) {
+    .tele-container {
+     background-image: none;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .tele-image {
+
+        max-height: 300px;
+        padding: 0px;
+        margin-top: -100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    
+    
+    }
+  }

@@ -1,20 +1,14 @@
-import './App.css';
-import NavbarReact from './componentes/Navbar/Navbar';
-import Titulo from './componentes/Titulo/Titulo';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Cart from './componentes/Cart/Cart';
-import CarouselGuitar from './componentes/Carousel/Carousel';
-import CartProvider from './CartContext/CartContext';
-import Footer from './componentes/Footer/Footer';
-import LinkIcons from './componentes/LinkIcons/LinkIcons';
-
-
-
-
-
-
+import "./App.css";
+import NavbarReact from "./componentes/Navbar/Navbar";
+import Titulo from "./componentes/Titulo/Titulo";
+import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./componentes/Cart/Cart";
+import CarouselGuitar from "./componentes/Carousel/Carousel";
+import CartProvider from "./CartContext/CartContext";
+import Footer from "./componentes/Footer/Footer";
+import LinkIcons from "./componentes/LinkIcons/LinkIcons";
 
 function App() {
   return (
@@ -23,7 +17,6 @@ function App() {
         <CartProvider>
           <NavbarReact />
           <CarouselGuitar />
-          
 
           <Titulo categoria="SHOP" />
           <LinkIcons />
@@ -39,7 +32,6 @@ function App() {
               path="/detalle/:detalleId"
               element={<ItemDetailContainer />}
             />
-            
           </Routes>
 
           <Footer />
@@ -50,4 +42,3 @@ function App() {
 }
 
 export default App;
- 
