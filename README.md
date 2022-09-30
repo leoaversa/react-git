@@ -1,6 +1,6 @@
-<h1>Ecommerce de venta de guitarras</h1>
+<h1>Ecommerce</h1>
 <br>
-<h3>El sitio simula una web de ventas de guitarras de la marca Fender</h3>
+<h3>El sitio es una web de ventas de guitarras de la marca Fender</h3>
 <p>Se pueden encontrar los últimos modelos de la marca y hay dos tipos de guitarras: eléctricas y acústicas, a las cuales se pueden acceder a través del menú del sitio.</p>
 <br>
 <H3>Tecnologías usadas en el sitio</h3>
