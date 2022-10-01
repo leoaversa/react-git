@@ -21,13 +21,13 @@ const ItemCart = ({ product }) => {
                 <p>{product.title}</p>
               </th>
               <th>
-                <p>Cantidad: {product.quantity}</p>
+                <p className="p-widht">Cantidad: {product.quantity}</p>
               </th>
               <th>
-                <p>$ {product.price}</p>
+                <p className="p-widht">$ {product.price}</p>
               </th>
               <th>
-                <p>Subtotal ${product.quantity * product.price}</p>
+                <p className="p-widht">Subtotal ${product.quantity * product.price}</p>
               </th>
               <th>
                 <Button

@@ -32,5 +32,25 @@
     width: 150px;
   }
 
- 
+  @media screen and (max-width: 600px) {
+
+    .item-cart img {
+      display: none;
+      
+    }
+
+    .p-widht{
+      width: 100px;
+    }
+
+    .button-remove{
+      margin-bottom: 30px;
+      font-size: 10px;
+    }
+
+    .p-widht{
+      font-size: 12px;
+      width: 50px;
+    }
+  }
 

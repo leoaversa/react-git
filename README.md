@@ -3,7 +3,7 @@
 <h3>El sitio es una web de ventas de guitarras de la marca Fender</h3>
 <p>Se pueden encontrar los últimos modelos de la marca y hay dos tipos de guitarras: eléctricas y acústicas, a las cuales se pueden acceder a través del menú del sitio.</p>
 <br>
-<H3>Tecnologías usadas en el sitio</h3>
+<H3>Tecnologías usadas para la coonstrucción de la web</h3>
 <ul>
 <li>Html</li>
 <li>Css</li>

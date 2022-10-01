@@ -83,8 +83,49 @@
         margin-top: -100px;
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;      
+    
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .button-seguir {
+        margin-left: 0px;
+        
     
     
     }
+    
+    .button-terminar {
+        font-size: 15px;
+        margin-left: 0px;
+        margin-top: 50px;
+    
+    
+    }
+
+    .price-guitar h3 {
+        padding: 0px;
+        width: 140px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    
+    
+    
+    }
+
+    .content h1 {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0px;
+        text-align: left;
+        margin-top: -110px;
+        margin-bottom: 0px;
+    
+    }
+
   }

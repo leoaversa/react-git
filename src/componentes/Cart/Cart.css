@@ -82,4 +82,20 @@
     margin: -20px 0px 20px 0px;
 }
 
+@media screen and (max-width: 600px) {
+
+    .form-orden{
+        padding: 50px;
+        width: 370px;
+        height: 751px;
+                
+    }
+
+    .loguito-cart img{
+        width: 10px;
+        margin-top: 30px;
+    }
+
+}
+
 

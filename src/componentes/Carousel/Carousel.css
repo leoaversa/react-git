@@ -37,3 +37,24 @@
     margin-bottom: 170px;
 }
 
+@media screen and (max-width: 600px) {
+    .margin-carousel{
+        margin-top: 105px;
+    }
+
+    .titulo-carousel h3{
+        font-size: 30px;
+        text-align: left;
+        margin-top: 500px;
+        margin-left: -80px;
+        font-weight: bold;
+    }
+
+
+}
+@media screen and (max-width: 1200px) {
+    .margin-carousel{
+        margin-top: 105px;
+    }
+}
+
