@@ -35,5 +35,14 @@
     
 }
 
+.Card img:hover{
+    transform: scale(1.03);
+    transition: all 0.4s ease-out;;
+    
+
+}
+
+
+
 
 

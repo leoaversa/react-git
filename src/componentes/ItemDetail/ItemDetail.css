@@ -11,8 +11,12 @@
     background-repeat: no-repeat;
     background-position-x: -100px;
     background-size: 500px;
+    
 }
 
+.tele-container background-image img{
+    size: 50px;
+}
 
 .content h1 {
     color: rgb(0, 0, 0);
@@ -38,9 +42,10 @@
 
 }
 
-.inner:hover {
-    transform: scale(1.5);
-    transition-duration: 0.5s;
+div img:hover{
+    
+    transform: scale(1.2);
+    transition: all 5s ease-out;;
 }
 
 .price-guitar h3 {

@@ -2,6 +2,7 @@ import './Item.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import "animate.css";
 
 
 
@@ -12,7 +13,7 @@ const Item = ({info}) => {
         
       <Card style={{ width: "18rem" }} className="Card">
         <Link to={`/detalle/${info.id}`} className="guitar">         
-          <img src={info.image} alt="imagen" />
+          <img src={info.image} alt="imagen" className='guitar-hover'/>
           <h2>{info.title}</h2>
           <p>${info.price}</p>
           <Button variant="dark" className='button-detalles'>Más detalles</Button>
